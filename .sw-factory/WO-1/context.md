@@ -26,4 +26,4 @@ Blueprints reached through `@…` mentions and links while reading linked bluepr
 ## Delivery
 
 - Branch: codex/8090-title-count-0914
-- Pull Request URL:
+- Pull Request URL: https://github.com/zzys3228/todo-react-8090-trial-0907/pull/1 (draft)

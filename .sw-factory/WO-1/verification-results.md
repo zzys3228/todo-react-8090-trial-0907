@@ -23,4 +23,4 @@ Backend: Codex In-app Browser, agent-created hidden tab, target `http://127.0.0.
 - Browser paste here demonstrates native maxLength behavior. The direct over-limit input-event path is covered by the focused test, not by the browser paste action.
 - No real assistive-technology speech output was measured. DOM semantics and message transitions were verified; actual NVDA announcements require a separate manual or instrumented AT pass.
 - 8090 Work Order WO-1 was moved from In Progress to In Review through the browser after the independent review verdict, and the list row, detail field, and Activity entry reflected In Review.
-- No remote commit, pull request, or 8090 execution MCP run is claimed in this file.
+- The reviewed code and WO-1/WO-2 execution files were delivered to draft [PR #1](https://github.com/zzys3228/todo-react-8090-trial-0907/pull/1) from the exact upstream base. WO-1's Development panel displayed this PR after branch creation. The PR is not merged; no 8090 execution MCP run is claimed.

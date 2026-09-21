@@ -15,4 +15,4 @@
 ## Evidence limits
 
 - No actual NVDA speech was measured; DOM roles, relationships, state text and transitions were observed.
-- No real screen-reader speech test or 8090 execution MCP run is claimed. Delivery links/status are recorded separately once created.
+- 8090 WO-2 was moved to In Review through the browser; its list row, detail, and Activity agreed. The Development panel explicitly links draft [PR #1](https://github.com/zzys3228/todo-react-8090-trial-0907/pull/1), while the WO-1 dependency remains visible. The PR is not merged. No real screen-reader speech test or 8090 execution MCP run is claimed.
