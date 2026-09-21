@@ -1,4 +1,6 @@
 import { useState } from "react";
+import TitleCounter from "./TitleCounter";
+import { limitTitle, MAX_TITLE_LENGTH } from "../constants/titleLimit";
 
 function Form(props) {
   const [name, setName] = useState('');
@@ -13,7 +15,7 @@ function Form(props) {
   }
 
   function handleChange(event) {
-    setName(event.target.value);
+    setName(limitTitle(event.target.value));
   }
 
   return (
@@ -31,8 +33,11 @@ function Form(props) {
         name="text"
         autoComplete="off"
         value={name}
+        maxLength={MAX_TITLE_LENGTH}
+        aria-describedby="new-todo-input-counter"
         onChange={handleChange}
       />
+      <TitleCounter value={name} fieldId="new-todo-input" />
       <button type="submit" className="btn btn__primary btn__lg">
         Add
       </button>

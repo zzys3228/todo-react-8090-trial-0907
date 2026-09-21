@@ -225,6 +225,20 @@ body {
   box-shadow: inset 0 0 0 2px;
 }
 /* End todo item styles */
+/* Title length feedback */
+.title-counter {
+  color: #595959;
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin-top: 0.4rem;
+  text-align: right;
+}
+.title-counter--at-limit {
+  color: #ca3c3c;
+  font-weight: 700;
+}
+/* End title length feedback */
 /* Checkbox styles */
 .c-cb {
   -webkit-font-smoothing: antialiased;
