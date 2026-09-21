@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import TitleCounter from "./TitleCounter";
+import { limitTitle, MAX_TITLE_LENGTH } from "../constants/titleLimit";
 
 function usePrevious(value) {
   const ref = useRef(null);
@@ -18,7 +20,7 @@ function Todo(props) {
   const wasEditing = usePrevious(isEditing);
 
   function handleChange(event) {
-    setNewName(event.target.value);
+    setNewName(limitTitle(event.target.value));
   }
 
   // NOTE: As written, this function has a bug: it doesn't prevent the user
@@ -42,9 +44,12 @@ function Todo(props) {
           className="todo-text"
           type="text"
           value={newName}
+          maxLength={MAX_TITLE_LENGTH}
+          aria-describedby={`${props.id}-counter`}
           onChange={handleChange}
           ref={editFieldRef}
         />
+        <TitleCounter value={newName} fieldId={props.id} />
       </div>
       <div className="btn-group">
         <button
